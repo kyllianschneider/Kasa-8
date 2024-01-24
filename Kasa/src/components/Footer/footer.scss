@@ -1,0 +1,28 @@
+@import "../../Styles/varmixin.scss";
+.footer {
+    margin-top: 50px;
+    background-color: black;
+    bottom: 0;
+    width: 100%;
+	height: 200px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    &__text {
+        color: white;
+        margin-top: 20px;
+        font-size: 24px;
+        @include breakpoint(smaller) {
+            font-size: 16px;
+          }
+        
+    }
+    &__break {
+        display: none;
+        @include breakpoint(smaller) {
+            display: flex;
+          }
+    }
+}

@@ -1,0 +1,29 @@
+
+//variables
+
+$primary-color: #FF6060;
+$secondary-color: white;
+$thirdly_color: #f6f6f6;
+
+
+
+
+//mixins
+
+@mixin breakpoint($point) {
+    @if $point == smallest {
+     @media (max-width: 325px) { @content; }
+   }
+    @else if $point == smaller {
+      @media (max-width: 440px) { @content; }
+    }
+    @else if $point == small {
+      @media (max-width: 768px) { @content; }
+    }
+    @else if $point == medium {
+      @media (max-width: 1024px) { @content; }
+    }
+    @else if $point == large {
+      @media (max-width: 1200px) { @content; }
+    }
+  }

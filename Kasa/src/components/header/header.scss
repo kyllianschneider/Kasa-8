@@ -1,0 +1,30 @@
+@import "../../Styles/varmixin.scss";
+.header {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 0 50px;
+    box-sizing: border-box;
+    @include breakpoint(small) {
+        padding: 0 25px;
+      }
+    &__figure {
+        display: flex;
+		align-items: flex-start;
+    }
+    &__logo {
+      @include breakpoint(small) {
+         width: 130px;
+      }
+      @include breakpoint(smallest) {
+        width: 100px;
+     }
+    }
+}
+   
