@@ -27,3 +27,9 @@ $thirdly_color: #f6f6f6;
       @media (max-width: 1200px) { @content; }
     }
   }
+
+ @mixin flex-inline {
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}

@@ -4,6 +4,7 @@ import About from "./pages/about/About";
 import Home from "./pages/home/Home";
 import Housing from "./pages/logement/Housing";
 import Layout from "./components/Layout/Layout";
+import "./Styles/main.scss";
 
 const App = () => {
     return (
@@ -11,10 +12,9 @@ const App = () => {
             <Route path="/" element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path="About" element={<About />} />
-          <Route path="ficheLogement/:id" element={<Housing />} />
+                <Route path="ficheLogement/:id" element={<Housing />} />
                 {/* <Route path="*" element={<NoMatch />} /> */}
             </Route>
-            
         </Routes>
     );
 };

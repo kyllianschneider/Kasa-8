@@ -1,28 +1,29 @@
 @import "../../Styles/varmixin.scss";
 
 .nav-bar {
-    
     &__link-home,
-    &__link-about {
+    &__link-about,
+    .selected {
+      
         color: $primary-color;
         text-decoration: none;
         padding-left: 30px;
         font-weight: 500;
         font-size: 20px;
-
+        @include flex-inline;
         @include breakpoint(smaller) {
-        font-size: 16px;
-        padding-left: 10px;
-        @include breakpoint(smallest) {
             font-size: 16px;
-            padding-left: 8px;
-          }
-      }
+            padding-left: 10px;
+            @include breakpoint(smallest) {
+                font-size: 16px;
+                padding-left: 8px;
+            }
+        }
     }
     &__link-home:hover {
         text-decoration: underline;
     }
-    &__link-about:hover{
+    &__link-about:hover {
         text-decoration: underline;
     }
 }
@@ -34,10 +35,5 @@
     @include breakpoint(smaller) {
         font-size: 16px;
         padding-left: 10px;
-        
-      }
+    }
 }
-        
-       
-       
-       

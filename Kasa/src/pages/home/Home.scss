@@ -1,0 +1,32 @@
+@import "../../Styles/varmixin.scss";
+
+.home {
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: auto;
+    @include breakpoint(small) {
+      padding: 0  20px;
+    }
+    &__bannertxt {
+      margin-bottom: 50px;
+      @include breakpoint(small) {
+        padding: 0  20px;
+      }
+
+    }
+}
+
+.cards-container
+ {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    background-color:$thirdly_color;
+    border-radius: 0.600rem;
+    @include breakpoint(small) {
+      grid-template-columns: 1fr;
+    }
+}
