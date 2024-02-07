@@ -26,6 +26,9 @@
     height: 70%;
     background-color:$thirdly_color;
     border-radius: 0.600rem;
+    @include breakpoint(medium){
+      grid-template-columns: repeat(2, 1fr);
+    }
     @include breakpoint(small) {
       grid-template-columns: 1fr;
     }

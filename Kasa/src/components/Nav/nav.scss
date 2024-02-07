@@ -4,7 +4,7 @@
     &__link-home,
     &__link-about,
     .selected {
-      
+        margin-top: 20px;
         color: $primary-color;
         text-decoration: none;
         padding-left: 30px;
@@ -14,6 +14,7 @@
         @include breakpoint(smaller) {
             font-size: 16px;
             padding-left: 10px;
+            margin-top: 10px;
             @include breakpoint(smallest) {
                 font-size: 16px;
                 padding-left: 8px;
@@ -35,5 +36,8 @@
     @include breakpoint(smaller) {
         font-size: 16px;
         padding-left: 10px;
+    }
+    &.selected:hover {
+        text-decoration: un;
     }
 }
