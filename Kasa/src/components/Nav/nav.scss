@@ -2,8 +2,7 @@
 
 .nav-bar {
     &__link-home,
-    &__link-about,
-    .selected {
+    &__link-about{
         margin-top: 20px;
         color: $primary-color;
         text-decoration: none;
@@ -38,6 +37,6 @@
         padding-left: 10px;
     }
     &.selected:hover {
-        text-decoration: un;
+        text-decoration: underline;
     }
 }

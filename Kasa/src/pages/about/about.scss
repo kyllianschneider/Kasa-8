@@ -1,0 +1,13 @@
+@import "../../Styles/varmixin.scss";
+
+.about {
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include breakpoint(small) {
+      padding: 0  20px;
+    }}
+    

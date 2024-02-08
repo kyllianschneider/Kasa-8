@@ -14,7 +14,6 @@ const Home = () => {
     return (
         <section className="home">
             <Banner
-                image={homeBanner}
                 texte={
                     <p className="home__bannertxt">
                         Chez vous, <br className="mobile-break" />

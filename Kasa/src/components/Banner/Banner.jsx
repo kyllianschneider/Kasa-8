@@ -1,9 +1,12 @@
-import '../Banner/banner.scss';
+import "../Banner/banner.scss";
 
-function Banner({texte}) {
-    return(
-        <div className='banner'>
-            {/* <img className="banner__img" src={image} alt="Bannière"/> */}
+function Banner({ texte }) {
+    const route = "/";
+
+    return (
+        // a faire en dessous c'est un example
+        <div className={`banner ${route == "/" ? "banner--home" : "banner--about"}`}>
+
             <div className="banner__overlay"></div>
             <span className="banner__title">{texte}</span>
         </div>
@@ -11,4 +14,3 @@ function Banner({texte}) {
 }
 
 export default Banner;
-
