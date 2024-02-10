@@ -58,13 +58,13 @@
         transition: height 1s ease;
 
         &.true {
-            height: 120px;
+            height: 100px;
             @media (max-width: 1440px) {
-                height: 160px;
+                height: 100px;
                 overflow: auto;
             }
             @media (max-width: 1115px) {
-                height: 170px;
+                height: 100px;
             }
 
             @include breakpoint(medium) {

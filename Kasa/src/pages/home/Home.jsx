@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 import "./Home.scss";
 import logements from "../../assets/logements.json";
 import Banner from "../../components/Banner/Banner";
-import homeBanner from "../../assets/home-banner.png";
 import Card from "../../components/Cards/Cards";
 
 const Home = () => {
