@@ -3,21 +3,15 @@
 .nav-bar {
     &__link-home,
     &__link-about{
-        margin-top: 20px;
         color: $primary-color;
         text-decoration: none;
         padding-left: 30px;
         font-weight: 500;
         font-size: 20px;
-        @include flex-inline;
         @include breakpoint(smaller) {
             font-size: 16px;
             padding-left: 10px;
             margin-top: 10px;
-            @include breakpoint(smallest) {
-                font-size: 16px;
-                padding-left: 8px;
-            }
         }
     }
     &__link-home:hover {

@@ -1,17 +1,26 @@
 @import "../../Styles/varmixin.scss";
+
+
 .header {
+    
     display: flex;
     justify-content: space-between;
-    width: 90%;
-    margin: 5%;
+    align-items: center;
+    width: 100%;
+    max-width: 1440px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding: 0 50px;
+    box-sizing: border-box;
     @include breakpoint(small) {
         padding: 0 25px;
-    }
+      }
     &__logo {
-        display: flex;
-        align-items: flex-start;
-        @include breakpoint(small) {
-            width: 200px;
-        }
+      @include breakpoint(small) {
+         width: 130px;
+      }
+     }
     }
-}
+
+   
