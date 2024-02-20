@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./collapse.scss";
-import fleche from "../../assets/fleche.png";
+import fleche from "../../assets/fleche.svg";
 
 function Collapse({ titre, description, className1, className2 }) {
     const [visible, setVisible] = useState(false);

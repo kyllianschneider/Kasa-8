@@ -1,0 +1,72 @@
+@import "../../Styles/varmixin.scss";
+
+.carrousel {
+    height: 400px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    @include breakpoint(smaller) {
+        height: 300px;
+      }
+    
+    &__img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: none;
+        border-radius: 0.600rem;
+    }
+    &__img.actif {
+        display: block;
+    }
+    &__fleche {
+        position: absolute;
+        width: 45px;
+        z-index: 1;
+    }
+    &__fleche:hover {
+        cursor: pointer;
+        filter: drop-shadow(4px 4px 6px black);
+    }
+    
+    &__dfleche {
+        margin-right: 80px;
+        right: 0;
+        top: 45%;
+        transform: rotate(90deg); 
+        @include breakpoint(small) {
+            margin-right: 20px;
+          }
+        @include breakpoint(smaller) {
+            margin-right: 10px;
+          }
+         
+        
+    }
+    &__gfleche {
+        margin-left: 80px;
+        left: 0;
+        top: 45%;
+        transform: rotate(-90deg);
+        @include breakpoint(small) {
+            margin-left: 20px;
+          }
+        @include breakpoint(smaller) {
+            margin-left: 10px;
+          }
+    }
+    &__counter {
+        position: absolute;
+        z-index: 1;
+        top: 90%;
+        left: 50%;
+        font-size: 20px;
+        color: $secondary-color;
+        filter: drop-shadow(4px 4px 6px black);
+        @include breakpoint(small) {
+            display: none;
+          }
+    }
+    
+}

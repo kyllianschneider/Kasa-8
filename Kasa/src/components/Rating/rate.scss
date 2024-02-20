@@ -1,0 +1,20 @@
+@import "../../Styles/varmixin.scss";
+
+
+.full-star,
+.empty-star {
+    
+    width: 35px;
+	height: 35px;
+    @include breakpoint(small) {
+       
+    }
+    @include breakpoint(smaller) {
+        width: 30px;
+        height: 30px;
+    }
+    @include breakpoint(smallest) {
+        width: 23%;
+        height: 30px;
+    }
+}

@@ -1,0 +1,159 @@
+@import "../../Styles/varmixin.scss";
+
+.logement {
+    max-width: 1440px;
+    padding: 0 50px;
+    margin: auto;
+
+    @include breakpoint(small) {
+        padding: 0 20px;
+    }
+
+    &__fichelogement {
+        display: flex;
+        justify-content: space-between;
+        color: $primary-color;
+        margin-top: 30px;
+
+        @include breakpoint(small) {
+            flex-direction: column;
+        }
+    }
+    &__information {
+        width: 60%;
+        @include breakpoint(medium) {
+            width: 60%;
+        }
+        @include breakpoint(small) {
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        @include breakpoint(smaller) {
+            font-size: 20px;
+        }
+    }
+
+    &__location {
+        font-weight: 400;
+        @include breakpoint(smaller) {
+            font-size: 20px;
+        }
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        margin-top: 90px;
+        color: $secondary-color;
+        @include breakpoint(medium) {
+            width: 90%;
+            margin-top: 40px;
+        }
+        @include breakpoint(small) {
+            width: 100%;
+            margin-top: 20px;
+        }
+        @include breakpoint(smaller) {
+            width: 100%;
+        }
+    }
+
+    &__hostInformation {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        @include breakpoint(medium) {
+            width: 40%;
+        }
+
+        @include breakpoint(small) {
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include breakpoint(smaller) {
+            padding-top: 0px;
+        }
+    }
+
+    &__details {
+        display: flex;
+        justify-content: flex-end;
+
+        @include breakpoint(small) {
+            order: 2;
+        }
+    }
+
+    &__host {
+        padding-top: 30px;
+        padding-right: 20px;
+        font-weight: 400;
+
+        @media (max-width: 550px) {
+            padding-right: 10px;
+        }
+        @include breakpoint(smaller) {
+            padding-top: 10px;
+            padding-left: 35px;
+        }
+        @media (max-width: 380px) {
+            padding-left: 25px;
+        }
+        @include breakpoint(smallest) {
+            padding-right: 0px;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+    }
+
+    &__img {
+        width: 100px;
+        height: 100px;
+        border-radius: 70px;
+        object-fit: cover;
+        @include breakpoint(smaller) {
+            width: 60px;
+            height: 60px;
+        }
+        @include breakpoint(smallest) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__collapse {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoint(small) {
+            flex-direction: column;
+        }
+    }
+
+    &__rating {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 70px;
+        padding-left: 100px;
+        @include breakpoint(medium) {
+            justify-content: flex-end;
+            margin-top: 40px;
+        }
+
+        @include breakpoint(small) {
+            padding-left: 0;
+            margin-right: 10px;
+            margin-top: 25px;
+            width: 50%;
+            justify-content: flex-start;
+        }
+    }
+}
