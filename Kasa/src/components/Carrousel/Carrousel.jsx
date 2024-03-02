@@ -10,6 +10,7 @@ function Carrousel({ images }) {
     const nombreImg = images.length;
 
     const prevImage = () => {
+        //si l'image actuelle est bien la premiere alors on lui retire un numéro quand on décrémente 
         if (currentImage === 0) {
             setCurrentImage(nombreImg - 1);
         } else {
@@ -18,6 +19,7 @@ function Carrousel({ images }) {
     };
 
     const nextImage = () => {
+        //si l'image actuelle est égale a la longeur du tableau alors on l'assigne a limage actuelle, sinon on incrémente pour passer à la suivante
         if (currentImage === nombreImg - 1) {
             setCurrentImage(0);
         } else {

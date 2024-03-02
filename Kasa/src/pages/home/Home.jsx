@@ -5,6 +5,7 @@ import Banner from "../../components/Banner/Banner";
 import Card from "../../components/Cards/Cards";
 
 const Home = () => {
+    //récupère les logements et les utilises dans un tableau pour les affichers sous forme de carte 
     const [data, setData] = useState([]);
     useEffect(() => {
         setData(logements);
@@ -25,6 +26,7 @@ const Home = () => {
                     <>
                         {data.map((logement) => (
                             <Card
+                            //appelle le component card et lui ajoute tout les composants nécessaires
                                 link={"ficheLogement/" + logement.id}
                                 key={logement.id}
                                 id={logement.id}
