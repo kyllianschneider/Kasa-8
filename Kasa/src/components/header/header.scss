@@ -9,7 +9,8 @@
     padding: 40px 50px;
     box-sizing: border-box;
     @include breakpoint(small) {
-        padding: 0 25px;
+        padding: 5 25px;
+        text-transform: uppercase;
     }
     &__logo {
         @include breakpoint(small) {
